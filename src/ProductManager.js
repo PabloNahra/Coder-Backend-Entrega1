@@ -97,7 +97,6 @@ export class ProdManager{
             return product
         }) 
 
-    console.log(updatedProducts)
     await fs.promises.writeFile(this.path, JSON.stringify(updatedProducts), 'utf-8')
 
     }
